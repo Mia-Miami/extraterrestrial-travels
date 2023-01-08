@@ -1,0 +1,503 @@
+    body {
+        color: rgb(255, 255, 255);
+        background: rgb(13, 13, 20);
+        font-family: 'Montserrat';
+        margin: 0;
+    }
+
+    .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            align-items: center;
+            z-index: 2;
+        }
+
+    ul {
+        padding-inline-start: 10px;
+    }
+
+
+    h1 {
+        font-size: 32px;
+        text-align: center;
+        font-weight: 1200;
+        margin-bottom: 80px;
+    }
+
+    h3 {
+        font-size: 12px;
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .h3_caps {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 200;
+    }
+
+    .p_2, .p_2_f {
+        font-size: 14px;
+        font-family: 'Montserrat';
+        font-weight: 200;
+    }
+
+    .p_2_f {
+       padding-right: 40px;
+       font-size: 14px;
+       font-weight: 200;
+       color: #ffffff6B;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .nav_1 {
+        position: relative;
+        float: right;
+    }
+
+    .nav_2 {
+        position: relative;
+    }
+
+    .menu {
+        width: 360px;
+    }
+
+
+    .menu li, .menu_footer li {
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: 200;
+        margin: 10px;
+        border-bottom: 0 solid;
+        display: inline;
+    }
+
+    .menu li a {
+        color: #ffffffae; 
+        text-decoration: none;
+    }
+  
+    .menu_footer li a {
+        color: #ffffff6b; 
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        color: #ffffff;
+        border-bottom: 3px solid #ffffff;
+        padding: 0;
+    }
+
+    .menu_footer li a:hover {
+        color: #ffffff4f;
+        padding: 0;
+    }
+
+    .menu li a:active {
+        color: rgb(222, 245, 253);
+       
+    }
+
+   #logo { 
+    text-align: center; 
+        width: 120px;
+    }
+
+    .input_base {
+        font-family: 'Montserrat'; 
+        color:#a7aaaa; 
+        font-weight: 160px; 
+        text-transform:uppercase;
+        height: 30px; 
+        border: 1px solid #818283;
+        background-color: #202224;
+        margin: 20px 10px;
+        padding-left: 10px;
+    }
+
+    .input_base:focus {
+        color:#ffffff; 
+        font-weight: 160px; 
+        text-transform:uppercase;
+        background-color: #27282a;
+        border: 1px solid #818283;
+    }
+
+    .cta_1 {
+        margin-bottom: 80px;
+    }
+
+   .submit {
+        font-weight: 600;
+        padding: 20px 80px;
+        box-shadow:   0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.10); 
+        border-radius: 30px; 
+        border: 0ch; 
+        font-family: 'Montserrat';
+        background-color: #a6a6a6; 
+        color:aliceblue;
+        margin: 10px;
+    }
+
+    .submit:hover {
+        cursor: grabbing;
+        background-color: #99b7b9; 
+        box-shadow: 0 12px 20px 0 rgba(0,0,0,0.1), 0 12px 40px 0 rgba(0,0,0,0.30); 
+    }
+
+    .submit:active {
+        box-shadow:none;
+        background-color: #5f5f5f;
+    }
+
+
+    .header {
+        background-color: #3f3f3f;
+        height: 100px;
+        color:#ffffff;
+        position: sticky;
+        top: 0;
+        align-items: center;
+        z-index: 10;
+        box-shadow: 0px 2px 6px rgba(28, 43, 54, 0.178);
+        padding: 0 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .footer {
+        padding:40px 40px 10px;
+        height: 180px;
+        background-color:#282d32;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        bottom: 0;
+        margin: 0;
+        z-index: 3;
+    }
+      
+    .footer ul {
+        padding:0;
+        list-style:none;
+        line-height:1.6;
+        font-size:14px;
+        font-weight: 500;
+    }
+
+    .footer li a {
+        font-size: 14px; 
+        list-style-type: none; 
+        text-decoration: none;
+        display: inline;
+    }
+    
+    
+    #logo_footer {
+        position: relative;
+        float: left;
+        width: 120px;
+        padding-right: 100px;
+    }
+
+
+    .bg_slider::after {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: -10px;
+    }
+
+    .upper_element {
+        display: block;
+        align-content: center;
+    }
+
+    .content_z_indx {
+        align-content: center;
+        margin: 160px 80px ;
+        opacity: 1;
+        position: relative;
+        font-family: 'Montserrat';
+        z-index: 1;
+        vertical-align:middle;
+        color: #FFFFFF;
+    }
+
+    
+    .bg_slider .slide {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        animation: slideshow 15s linear infinite 0s;
+    } 
+
+    .bg_slider .slide:nth-child(1) {
+        background-image: url('slider_1.png');
+    }
+      
+    .bg_slider .slide:nth-child(2) {
+        background-image: url('slider_1.png');
+        animation-delay: -5s;
+    }
+
+    .bg_slider .slide:nth-child(3) {
+        background-image: url('slider_1.png');
+        animation-delay: -10s;
+    }
+            
+    @keyframes slideshow {
+        0% { opacity: 0;}
+        12.5% { opacity: 1;}
+        25% { opacity: 1;}
+        37.5% { opacity: 0;}
+        100% { opacity: 0;}
+    }
+
+    #where, #passengers, #departure {
+        min-width: 180px;
+    }
+
+    #icon {
+        padding: 6px;
+    }
+
+    .soc_media {
+        width: 220px;
+        text-align: right;
+    }
+
+    .div_footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .guides {
+        display: flex;
+        margin-right: -40px;
+    }
+
+    
+    #menuToggle {
+  display: block;
+  position: absolute;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #ffffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: #ffffff;
+}
+
+#menuToggle input {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin-bottom: 6px;
+  position: relative;
+  
+  background: #ffffff;
+  border-radius: 4px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 1s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed8b;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+#menu a:hover {
+    color: rgb(201, 246, 255);
+}
+
+#menuToggle span:hover {
+    color: rgb(201, 246, 255);
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+section {
+    padding: 120px 80px;
+}
+
+.ship {
+    background-color:#fafafa;
+    color: rgb(31, 31, 36);
+}
+
+
+.row_ship {
+    display: flex;
+    flex-direction: row;
+}
+
+.p2_black {
+    font-size: 12px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+.p2_black_semibold {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 160%;
+    margin-bottom: 0;
+}
+
+.p2_red {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF1212;
+    line-height: 160%;
+}
+
+.column_1, .column_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+    padding: 80px 60px;
+}
+
+.column_1 {
+    width: 25%;
+}
+
+.column_2 {
+    width: 75%;
+}
+
+.h1_left {
+    text-align: left;
+    margin-bottom: 0;
+    line-height: 120%;
+}
+
+.more_play {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.ship_img {
+    max-width: 770px;
+}

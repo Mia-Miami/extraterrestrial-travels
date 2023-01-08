@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title></title>
+<link href="style_2.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Open+Sans:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+      <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Info</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+      <div>
+        <a id="logo" href="index.html">   
+          <img src="Logo.png" id="logo" alt="logo" title="logo"/>
+        </a>
+    </div>
+    <a id="Icon" href="index.html">
+      <img src="Icon.png" id="Icon" alt="Icon" title="Icon"/>
+    </a>
+    </nav>
+    </header>
+    <div class="container">
+                <div class="content_z_indx">
+            <div class="h1">
+                <h3 class="cta_1">To space and back, safely.</h3>
+                <h1>MOON</h1>
+                <h3 class="h3_caps">new destination</h3>
+            </div>
+            <form action="booking" id="booking_form">
+             <input type="text" class="input_base" name="where" id="where" title="where" placeholder="moon" autocomplete="off" required/>
+             
+             <input type="number" class="input_base" name="passengers" id="passengers" id="quantity" min="1" max="10" title="passengers" placeholder="1 adult" autocomplete="off" required/>
+             
+             <input type="text" class="input_base" name="departure" id="departure" title="departure" placeholder="departure" autocomplete="off" required/>
+             
+             <button type="submit" class="submit">book ---></button>
+                     
+            </form>  
+        </div>
+        <div class="bg_slider">
+             <div class="slide"></div>
+             <div class="slide"></div>
+             <div class="slide"></div>
+        </div>
+    </div>
+       
+    <section class="ship">
+      <div class="row_ship">
+        <div class="column_1">
+          <h1 class="h1_left">Ultimate flight experience in high-end tech.</h1>
+          <div class="more_play">
+            <div>
+              <a id="icon" href="index.html">   
+                <img src="Twitter.png" id="Icon" alt="Icon" title="Icon"/>
+              </a>
+            </div>
+            <div>
+              <a id="icon" href="index.html">   
+                <img src="Twitter.png" id="Icon" alt="Icon" title="Icon"/>
+              </a>
+            </div>
+          </div>
+          <p2 class="p2_black">With SPACED, you can get a sense of high-end fast & safe space travelling. Most of what space agencies consider to be long distance trips can be 
+            completed in one day. Consider how much time and money we were spending in the past to travel to another worlds.</p2>
+        </div>
+        <div class="column_2">
+          <img src="Frame 3.png" id="ship_img" class="ship_img" alt="ship_img" title="ship_image"/>
+          <h1 class="h1_left">The Deal?</h1>
+          <p2 class="p2_black_semibold">From Earth to various places starting at <span class="p2_red"> $2199</span>. We get you anywhere
+            and back <span class="p2_red">safely</span> within solar system within <span class="p2_red">1 day</span>. Pick your <span class="p2_red">destination</span> now.</p2>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="div_footer">
+        <div>
+        <a id="logo_footer" href="index.html">   
+          <img src="Logo_footer.png" id="logo_footer" alt="logo" title="logo"/>
+        </a>
+      </div>
+        <nav>
+          <ul class="menu_footer">
+              <li>
+                <a href="Index.html">Home</a>
+              </li>
+              <li>
+                <a href="">About_us</a>
+              </li>
+              <li>
+                <a href="">Products</a>
+              </li>       
+              <li>
+                <a href="">Contacts</a>
+              </li>
+          </ul>
+        </nav>
+        <div class="soc_media">
+          <a id="icon" href="index.html">   
+            <img src="Twitter.png" id="Icon" alt="Icon" title="Icon"/>
+          </a>
+          <a id="icon" href="index.html">   
+            <img src="Instagram.png" id="Icon" alt="Icon" title="Icon"/>
+          </a>
+          <a id="icon" href="index.html">   
+            <img src="Facebook.png" id="Icon" alt="Icon" title="Icon"/>
+          </a>
+        </div>
+      </div>
+      <div class="div_footer">
+        <div>
+          <p class="p_2_f">&#169; 2023 SPACED, Inc. All rights reserved.</p>
+        </div>
+        <div class="guides">
+          <p class="p_2_f">Guides</p>
+          <p class="p_2_f">Terms of Use</p>
+          <p class="p_2_f">Company Details</p>
+          <p class="p_2_f">Privacy & Cookie Policy </p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
